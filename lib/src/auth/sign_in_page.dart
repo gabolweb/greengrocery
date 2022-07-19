@@ -31,8 +31,15 @@ class SignInPage extends StatelessWidget {
             ),
             child: Column(
               children: const [
-                CustomTextField(),
-                CustomTextField(),
+                CustomTextField(
+                  icon: Icons.email,
+                  label: 'Email',
+                ),
+                CustomTextField(
+                  icon: Icons.lock,
+                  label: 'Senha',
+                  isSecret: true,
+                ),
               ],
             ),
           ),
